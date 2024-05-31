@@ -12,7 +12,9 @@ https://github.com/ershangpt/nagp-kubernetes-assignment
 
 ## URL for Service API
 
-http://104.198.215.87/
+GET Users list api : http://104.198.215.87/users
+
+For api integrated UI - http://104.198.215.87/
 
 ## Link for screen recording video
 
