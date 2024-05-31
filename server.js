@@ -24,6 +24,16 @@ const connection = mysql.createConnection({
 
 connection.connect();
 
+app.get("/users", (req, res) => {
+  connection.query(
+    "SELECT * FROM users order by id desc",
+    (error, results, fields) => {
+      if (error) throw error;
+      res.json(results);
+    }
+  );
+});
+
 app.get("/", (req, res) => {
   // Query to fetch users
   const query = "SELECT * FROM users order by id desc";
